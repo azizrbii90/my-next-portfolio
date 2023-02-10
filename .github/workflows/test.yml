@@ -19,7 +19,7 @@ jobs:
       - name: Install doctl
         uses: digitalocean/action-doctl@v2
         with:
-          token: dop_v1_6c79b2e709641863b08cf1cb35a242832281e2198aa5ffbb5aa8bfffb04a2c16
+          token: dop_v1_ede65b057fd7d45a4f64153669fb95968a57c04192a08e67fe3a562ee286c57a
       - name: Log in to DigitalOcean Container Registry with short-lived credentials
         run: doctl registry login --expiry-seconds 600
       - name: Remove all old images
