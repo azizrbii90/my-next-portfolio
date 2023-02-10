@@ -5,8 +5,8 @@ on:
   push:
     branches: ['master']
 env:
-  REGISTRY: ${{ secrets.REGISTRY }}
-  IMAGE_NAME: ${{ secrets.IMAGE_NAME }}
+  REGISTRY:registry.digitalocean.com/cc-dev-registry
+  IMAGE_NAME: next-portfolio:0.1
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build_and_push:
